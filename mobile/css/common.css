@@ -28,6 +28,7 @@ img{width: 100%;}
 .hide{display: none;}
 
 
+
 * {
     padding: 0;
     margin: 0;
@@ -44,35 +45,45 @@ img{width: 100%;}
     font-family: 'Pretendard-Light';
     font-style: normal;
     font-weight: 400;
-    src: url(css/font/Pretendard-Light.subset.woff2) format('woff2');
+    src: 
+    url(css/font/Pretendard-Light.otf) format('opentype'),
+    url(css/font/Pretendard-Light.ttf) format('truetype')
 }
 
 @font-face {
     font-family: 'Pretendard-Regular';
     font-style: normal;
     font-weight: 400;
-    src: url(css/font/Pretendard-Regular.subset.woff2) format('woff2');
+    src: 
+    url(css/font/Pretendard-Regular.otf) format('opentype'),
+    url(css/font/Pretendard-Regular.ttf) format('truetype')
 }
 
 @font-face {
     font-family: 'Pretendard-Medium';
     font-style: normal;
     font-weight: 400;
-    src: url(css/font/Pretendard-Medium.subset.woff2) format('woff2');
+    src: 
+    url(css/font/Pretendard-Medium.otf) format('opentype'),
+    url(css/font/Pretendard-Medium.ttf) format('truetype')
 }
 
 @font-face {
     font-family: 'Pretendard-SemiBold';
     font-style: normal;
     font-weight: 400;
-    src: url(css/font/Pretendard-SemiBold.subset.woff2) format('woff2');
+    src: 
+    url(css/font/Pretendard-SemiBold.otf) format('opentype'),
+    url(css/font/Pretendard-SemiBold.ttf) format('truetype')
 }
 
 @font-face {
     font-family: 'Pretendard-Bold';
     font-style: normal;
     font-weight: 400;
-    src: url(css/font/Pretendard-Bold.subset.woff2) format('woff2');
+    src: 
+    url(css/font/Pretendard-Bold.otf) format('opentype'),
+    url(css/font/Pretendard-Bold.ttf) format('truetype')
 }
 
 
@@ -80,15 +91,20 @@ img{width: 100%;}
     font-family: 'Pretendard-ExtraBold';
     font-style: normal;
     font-weight: 400;
-    src: url(css/font/Pretendard-ExtraBold.subset.woff2) format('woff2');
+    src: 
+    url(css/font/Pretendard-ExtraBold.otf) format('opentype'),
+    url(css/font/Pretendard-ExtraBold.otf) format('truetype')
 }
 
 @font-face {
     font-family: 'Pretendard-Black';
     font-style: normal;
     font-weight: 400;
-    src: url(css/font/Pretendard-Black.subset.woff2) format('woff2');
+    src: 
+    url(css/font/Pretendard-Black.otf) format('opentype'),
+    url(css/font/Pretendard-Black.ttf) format('truetype')
 }
+
 
 @font-face {
     font-family: 'Noto Sans KR';
@@ -105,6 +121,7 @@ img{width: 100%;}
     src: 
     url(css/font/NotoSansKR-Light.ttf) format('truetype')
 }
+
 
 @font-face {
     font-family: 'Noto Sans KR';
