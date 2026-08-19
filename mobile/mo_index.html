@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.bpop.js"></script>
+    <script src="js/index.js"></script>
+    <title>현대제철 공모전</title>
+</head>
+<body>
+<header id="header" class="header">
+  <div class="header_bg"></div>
+  <div class="header_inner">
+    <a href="javavscirpt:;" class="logo"></a>    
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+		<div class="nav_wrap">
+      
+      <div class="nav_inner">
+        <a href="javavscirpt:;" class="nav_logo"></a>
+        <div class="nav_box">    
+          <div class="search_area">
+            <form action="/" method="">
+              <div class="search_form">
+                <div class="input_wrap">
+                  <input type="search" name="search_word" class="search_input" placeholder="현대제철의 모먼트를 검색하세요" autocomplete="off">
+                </div>
+                <button class="btn_search"><span class="blind">검색</span></button>
+              </div>
+            </form>
+          </div>
+          <nav class="menu">
+            <ul class="menu_nav">
+              <li class="nav_item"><a href="https://moment.hyundai-steel.com/moment-list" class="link">ALL</a></li>
+              <li class="nav_item"><a href="https://moment.hyundai-steel.com/moment-list?searchValue=50002" class="link">TECH</a></li>
+              <li class="nav_item"><a href="https://moment.hyundai-steel.com/moment-list?searchValue=50003" class="link">SUSTAINABILITY+</a></li>
+              <li class="nav_item"><a href="https://moment.hyundai-steel.com/moment-list?searchValue=50004" class="link">PEOPLE</a></li>
+              <li class="nav_item"><a href="https://moment.hyundai-steel.com/moment-list?searchValue=50005" class="link">SNS | EVENT</a></li>
+              <li class="nav_item"><a href="https://moment.hyundai-steel.com/moment-list?searchValue=50006" class="link">PRESS</a></li>
+            </ul>
+          </nav>
+        </div>
+		  </div>
+		</div>
+		<!--// 네비게이션 -->
+        <div class="header_box">
+          <ul class="d-day-ul">
+            <li>D</li>
+            <li>-</li>
+            <li class="day first">1</li>
+            <li class="day end">4</li>
+          </ul>
+          <div class="sub_tit">한뼘 에세이 공모전</div>
+          <div class="main_tit">나를 지탱해준 모먼트</div>
+          <div class="sub_txt">단단하고 견고하게 세상을 지탱하는 철과 같이<br>흔들릴 때 꺾이지 않도록 나, 너, 우리를 지탱해준 순간들</div>
+          <a href="javascript:;" class="btn">참여하기</a>
+      </div>  
+    </div>
+  </div>
+</header>
+<div class="floating_wrap">
+  <a href="javascript:;" class="writing"></a>
+  <a href="javascript:;" class="sharing"></a>
+  <a href="javascript:;" class="page_up"></a>
+</div>
+
+<div class="wrap"> 
+  <div class="tab_wrap">
+    <div class="tab_inner">
+      <ul class="tab_ul">
+        <li><a href="javascript:;" data-category="all" class="on">ALL</a></li>
+        <li><a href="javascript:;" data-category="person">나를 지탱해 준 사람</a></li>
+        <li><a href="javascript:;" data-category="item">나를 지탱해 준 물건</a></li>
+        <li><a href="javascript:;" data-category="place">나를 지탱해 준 장소</a></li>
+      </ul>
+      <div class="search_box">
+        <form action="/" method="get">
+          <input type="text" name="search">
+          <button type="submit" class="btn_search"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card_wrap">
+    <div class="cont">
+
+      <ul class="card_ul">
+        <li class="card fixed">
+          <div class="info_icon"></div>
+          <div class="info_head_img"><span class="blind">한뼘 에세이 공모전</span></div>
+          <div class="info_head">: 나를 지탱해준 모먼트 </div>
+          <ul class="info_ul">
+            <li class="orange">
+              <div class="info_tit">공모 주제</div>
+              <div class="info_txt">힘들었던 순간, 나를 지탱해준 존재에 대한 이야기</div>
+            </li>
+            <li class="orange">
+              <div class="info_tit">세부 카테고리(3개 중 택1)</div>
+              <div class="info_txt">
+                <ul>
+                  <li>1) 나를 지탱해준 사람</li>
+                  <li>2) 나를 지탱해준 물건</li>
+                  <li>3) 나를 지탱해준 장소</li>
+                </ul>
+              </div>
+            </li>
+            <li class="blue row">
+              <div class="row_box">
+                <div class="info_tit">참여 대상</div>
+                <div class="info_txt">전 국민 누구나</div>
+              </div>
+              <div class="row_box dot">
+                <div class="info_tit">참여 기간</div>
+                <div class="info_txt">26년 4월 6일(월) ~ 4월 30일(목),<br>총 25일간</div>
+              </div>
+            </li>
+
+            <li class="blue">
+              <div class="info_tit">제출 형식</div>
+              <div class="info_txt">500자 내외 에세이<br>※ 사진 첨부는 선택 사항이며, 심사에는 반영되지 않습니다.</div>
+            </li>
+            <li class="blue">
+              <div class="info_tit">참여 방법</div>
+              <div class="info_txt">현대제철 미디어룸 moment<br>(https://moment.hyundai-steel.com/) 내 공모전 페이지 접수</div>
+            </li>
+            <li class="yellow">
+              <div class="info_tit">심사 기준</div>
+              <div class="info_txt">공감도 · 전달력 30%, 브랜드 가치 연결성 30%,<br>흐름 · 완결성 30%, 주제 충실도 10%</div>
+            </li>
+            <li class="yellow">
+              <div class="info_tit">시상 내역</div>
+              <div class="info_txt">총 80명 선정 │ 총 상금 약 460만 원
+                <ul class="minus_ul">
+                  <li><span>-</span>대상 1명: 70만 원</li>
+                  <li><span>-</span>최우수상 부문별 각 1명(각 50만 원) - 총 200만 원</li>
+                  <li><span>-</span>우수상 부문별 각 2명(각 20만 원) - 총 160만 원</li>
+                  <li><span>-</span>참여상 30명(추천, 각 1만 원 상품권) - 총 30만 원<br>※ 	제세공과금은 주최사 부담</li>
+                </ul>
+
+              </div>
+            </li>
+            <li class="yellow">
+              <div class="info_tit">문의</div>
+              <div class="info_txt">공모전 운영사무국(hyundaisteel.contest@gmail.com)</div>
+            </li>
+
+          </ul>
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          <div class="card_pop card_pop1 hide">
+            <a href="javascript:;" class="btn_close b-close"></a>
+            <div class="alert_txt">게시물 등록 시 설정한 <br>비밀번호를 입력해주세요.</div>
+            <div class="pswd_wrap">
+              <input type="password" class="real_pswd" maxlength="4"/>
+              <div class="fake_pswd">
+                <span>*</span>
+                <span>*</span>
+                <span>*</span>
+                <span>*</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_pop card_pop2 hide">
+            <a href="javascript:;" class="btn_close b-close"></a>
+            <div class="alert_txt f_red">비밀번호가 틀렸습니다.</div>
+            <div class="alert_txt">게시물 등록 시 설정한 <br>비밀번호를 입력해주세요.</div>
+            <div class="pswd_wrap">
+              <input type="password" class="real_pswd"  maxlength="4"/>
+              <div class="fake_pswd">
+                <span>*</span>
+                <span>*</span>
+                <span>*</span>
+                <span>*</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_pop card_pop3 hide">
+            <a href="javascript:;" class="btn_close b-close"></a>
+            <div class="alert_txt">게시물이 삭제되었습니다.</div>
+          </div>
+
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄입니다</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄입니다</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.</div>
+              <div class="like on">33</div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄입니다</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like">33</div>
+          </div>
+          
+        </li>
+        
+        <li class="card">
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.</div>
+              <div class="like on">33</div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.</div>
+              <div class="like on">33</div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.</div>
+              <div class="like on">33</div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.</div>
+              <div class="like on">33</div>
+          </div>
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_img"><img src="/public/images/img1.png" alt=""></div>
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">타이틀 두 줄의 경우, 참고 예시입니다.</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.
+한때 모든 것이 무너진 듯한 상실감에 빠져 세상으로부터 숨고 싶었던 적이 있었습니다. 스스로를 믿지 못해 방황하던 그때, 그 사람은 제가 왜 대단한지 설명하려 애쓰지 않았습니다. 그저 따뜻한 차 한 잔을 내밀며 "네가 어떤 모습이든 나는 여기 있을 거야"라는 눈빛으로 저를 바라봐 주었습니다. 그 고요한 믿음은 날카로운 비난보다 강했고, 어떤 격려의 말보다 따뜻했습니다.
+지탱해준다는 것은 대신 걸어주는 것이 아니라, 다시 일어날 수 있도록 바닥이 되어주는 일임을 깨달았습니다. 그 덕분에 저는 다시 고개를 들고 세상을 마주할 용기를 얻었습니다. 이제는 제가 그 사람에게, 그리고 누군가에게 비바람을 막아주는 든든한 버팀목이 되어주고 싶습니다. 우리가 서로를 지탱할 때, 삶은 비로소 무너지지 않는 견고한 집이 된다는 것을 오늘도 배웁니다.</div>
+              <div class="like on">33</div>
+          </div>
+          
+        </li>
+        <li class="card">
+          <div class="card_txt_box">
+            <div class="icon_trash">삭제</div>
+            <div class="icon_share">공유</div>
+            <div class="icon_more"></div>
+            <div class="sub_tit">나를 지탱해준 사람</div>
+            <div class="title">한 줄</div>
+            <div class="txt">인생이라는 긴 여정에서 우리는 수많은 사람을 스쳐 지나가지만, 유독 마음 한구석을 든든하게 채워주는 존재가 있습니다. 제게 그런 사람은 거창한 조언을 늘어놓는 이가 아니라, 가장 낮은 곳에 있을 때 묵묵히 곁을 지켜준 '나의 나무' 같은 사람입니다.</div>
+              <div class="like on">33</div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="btn_wrap">
+        <a href="javascript:;" class="btn_more">더보기</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- cont -->
+</div>
+
+<footer class="footer">
+  <div class="footer_inner">
+      <a href="/" class="footer_logo"><img src="/public/images/footer_logo.png" alt=""></a>
+      <ul class="sns_ul">
+        <li>
+          <a href="https://www.youtube.com/@hyundaisteelofficial" target="_blank">
+            <div class="sns_img"><img src="/public/images/ytb.png" alt="ytb"></div>
+            <div class="sns_txt">YouTube</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/hyundaisteel.official/" target="_blank">
+            <div class="sns_img"><img src="/public/images/insta.png" alt="insta"></div>
+            <div class="sns_txt">Instagram</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hyundai-steel.com/kr" target="_blank">
+            <div class="sns_img"><img src="/public/images/web.png" alt="website"></div>
+            <div class="sns_txt">Website</div>
+          </a>
+        </li>
+      </ul>
+      <div class="info_area">
+        모먼트 문의 | pr-team@hyundai-steel.com</a><br>
+        현대제철(주) 경기도 성남시 분당구 분당내곡로 117<br>
+        COPYRIGHT© HYUNDAI STEEL. All Rights Reserved
+      </div>
+  </div>
+</footer>
+
+<div class="pop hide">
+  <a href="javascript:;" class="btn_down b-close"></a>
+  <a href="javascript:;" class="btn_close b-close"></a>
+
+  <div class="pop_inner">
+    <form action="/" method="post">
+      <ul class="input_ul">
+        <li class="row">
+            <div class="input_label">카테고리*</div>
+            <div class="select_box">
+              <button class="select_btn">나를 지탱해준 사람</button>
+              <ul class="select_ul">
+                <li><button class="item" value="나를 지탱해준 사람">나를 지탱해준 사람</button></li>
+                <li><button class="item" value="나를 지탱해준 물건">나를 지탱해준 물건</button></li>
+                <li><button class="item" value="나를 지탱해준 장소">나를 지탱해준 장소</button></li>
+              </ul>
+            </div>
+        </li>
+        <li>
+          <div class="input_box">
+            <label for="input_title">제목*
+              <input type="text" id="input_title" placeholder="제목을 입력해주세요. (공백포함 32자 내)" maxlength="32">
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="input_box">
+            <label for="input_text">내용*
+              <textarea id="input_text" placeholder="내용을 입력해주세요. (500자 내외)" maxlength="500"></textarea>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="input_box">
+            <label for="input_photo">사진(선택)*
+              <div class="photo">drag & drop / 이미지 파일 크기 제한 : 10MB(JPG, PNG)</div>
+            </label>
+            <input type="file" id="input_photo" accept=".jpg,.png" hidden>
+          </div>
+        </li>
+        <li class="short">
+          <div class="input_box">
+            <label for="input_name">이름*
+              <input type="text" id="input_name" placeholder="이름을 입력해주세요.">
+            </label>
+          </div>
+          <div class="input_box phone">
+            <label for="input_phone">연락처*
+              <input type="text" id="input_phone" placeholder="‘-’ 제외하고 숫자만 입력해주세요.">
+            </label>
+          </div>
+        </li>
+        <li class="short">
+          <div class="input_box">
+            <label for="input_pswd">비밀번호*
+              <input type="text" id="input_pswd" placeholder="네 자리 숫자를 입력해주세요." maxlength="4">
+            </label>
+            <div class="input_note">*게시물 삭제 시 비밀번호 입력 후 삭제 가능 </div>
+          </div>
+        </li>
+        <li class="consnet">
+          <div class="input_label sty2">개인정보 수집·이용 동의*</div>
+          <div class="consent_wrap">
+            <div class="cont">
+              <div class="cont_inner">
+              [개인정보 수집 및 이용 동의서(안)]<br>
+  1. 개인정보의 수집 및 이용 목적<br>
+  본 서비스는 이용자의 개인정보를 (회원 가입 의사 확인, 본인 식별 및 인증, 회원 자격 유지·관리, 서비스 제공에 따른 금액 결제, 물품 또는 서비스의 배송, 고충 처리) 등의 목적으로만 이용합니다. 수집된 정보는 정해진 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경될 시에는 사전 동의를 구할 예정입니다.
+  <br><br>
+  2. 수집하는 개인정보의 항목<br>
+  서비스 이용 과정에서 다음과 같은 개인정보 항목을 수집할 수 있습니다.<br>
+  <br>
+  필수항목: 성명, 아이디, 비밀번호, 휴대전화번호, 이메일 주소<br>
+  <br>
+  선택항목: 생년월일, 주소, 마케팅 수신 동의 여부<br>
+  <br>
+  (서비스 이용 과정에서 IP 주소, 쿠키, 방문 기록 등이 자동으로 생성되어 수집될 수 있습니다.)<br>
+  <br>
+  3. 개인정보의 보유 및 이용 기간<br>
+  이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용 목적이 달성되면 지체 없이 파기합니다. 단, 관계 법령의 규정에 의하여 보존할 필요가 있는 경우(예: 전자상거래법에 따른 계약 및 청약철회 기록 5년 등)에는 해당 기간 동안 안전하게 보관합니다.
+  <br><br>
+  4. 동의 거부 권리 및 불이익 안내<br>
+  이용자는 본 개인정보 수집 및 이용 동의를 거부할 권리가 있습니다. 다만, 필수 항목에 대한 동의를 거부하실 경우 (회원 가입 및 서비스 이용)이 제한될 수 있습니다. 선택 항목에 대한 동의를 거부하시더라도 서비스 이용은 가능하나, 일부 맞춤형 혜택 제공이 제한될 수 있습니다.
+              </div>            
+            </div>
+            <div class="radio_wrap">
+              <div class="radio_box">
+                <input type="radio" name="consent" id="input_consent1" class="consent">
+                <label for="input_consent1" class="on">동의</label>
+              </div>
+              <div class="radio_box">
+                <input type="radio" name="consent" id="input_consent2" class="consent" >
+                <label for="input_consent2">동의 안 함</label>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="submit_box">
+        <button type="submit" class="btn_submit">제출</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="pop_alert alert1 hide">
+    <a href="javascript:;" class="btn_close b-close"></a>
+    <div class="alert_txt">필수 정보를 모두 입력해주세요.</div>
+    <a href="javascript:;" class="btn_confirm b-close">확인</a>
+</div>
+
+<div class="pop_alert alert2 hide">
+    <a href="javascript:;" class="btn_close b-close"></a>
+    <div class="alert_txt">개인정보 수집·이용에 동의해주세요.</div>
+    <a href="javascript:;" class="btn_confirm b-close">확인</a>
+</div>
+<div class="pop_alert alert3 hide">
+    <a href="javascript:;" class="btn_close b-close"></a>
+    <div class="alert_txt"><span class="f_blue">출품 접수가 완료</span>되었습니다. <br>게시물은 관리자 승인 후<br>홈페이지에 노출됩니다.</div>
+    <a href="javascript:;" class="btn_confirm b-close">확인</a>
+</div>
+<div class="pop_alert alert4 hide">
+    <a href="javascript:;" class="btn_close b-close"></a>
+    <div class="alert_txt">사진 용량을 확인해주세요.</div>
+    <a href="javascript:;" class="btn_confirm b-close">확인</a>
+</div>
+<div class="pop_alert alert5 hide">
+    <a href="javascript:;" class="btn_close b-close"></a>
+    <div class="alert_txt"><span class="f_blue">이미 해당 카테고리에 접수</span>했습니다.<br>다른 카테고리를 선택해주세요. </div>
+    <div class="alert_txt mt20">해당 카테고리 접수를 원할 시,<br><span class="f_blue">기존 게시물을 삭제하면<br>게시물을 새로 등록</span>할 수 있습니다.</div>
+    <a href="javascript:;" class="btn_confirm b-close">확인</a>
+</div>
+
+
+</body>
+
+
+
+</html>
