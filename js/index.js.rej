@@ -1,0 +1,32 @@
+diff a/public/js/index.js b/public/js/index.js	(rejected hunks)
+@@ -1,24 +1,30 @@
+ $(function () {
+   // const container = $(".card_ul");
+ 
+   // const fixed = container.find(".fixed");
+   // const cards = container.find(".card").not(".fixed");
+ 
+   // const shuffled = cards.toArray().sort(() => Math.random() - 0.5);
+ 
+   // container.empty();
+   // container.append(fixed);
+   // container.append(shuffled);
+ 
++    // nav
++  $(".hamburger").click(function () {
++    $(".nav_wrap").toggleClass("on");
++    $(this).toggleClass("on");
++  });
++  
+   var msnry = new Masonry(".card_ul", {
+     itemSelector: ".card",
+     gutter: 40,
+     // horizontalOrder: true,
+   });
+ 
+   // 카드 더보기 아이콘
+   $(document).on("click", ".card_txt_box .icon_more", function () {
+     $(this).siblings(".icon_trash").toggleClass("on");
+   });
+ 
+   // var card = $(this).closest(".card");
