@@ -1,0 +1,123 @@
+/* reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; } 
+body { line-height: 1; word-break: keep-all; } 
+ol, ul { list-style: none; } 
+blockquote, q { quotes: none; } 
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; } 
+table { border-collapse: collapse; border-spacing: 0; }
+li{list-style-type: none;} 
+a { text-decoration: none; color: #000;} 
+img{width: 100%;}
+.blind{display: none;}
+.hide{display: none;}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
+    letter-spacing: -0.03em;
+    word-break: keep-all;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/mobile/css/font/Pretendard-Light.subset.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/mobile/css/font/Pretendard-Regular.subset.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard-Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/mobile/css/font/Pretendard-Medium.subset.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/mobile/css/font/Pretendard-SemiBold.subset.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/mobile/css/font/Pretendard-Bold.subset.woff2) format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/mobile/css/font/Pretendard-ExtraBold.subset.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Pretendard-Black';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/mobile/css/font/Pretendard-Black.subset.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: 
+    url(../css/font/NotoSansKR-Thin.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: 
+    url(../css/font/NotoSansKR-Light.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url(../css/font/NotoSansKR-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+    url(../css/font/NotoSansKR-Bold.ttf) format('truetype')
+}
